@@ -1,8 +1,9 @@
 # digitinputs-react
-
-> A react component for digit inputs
-
 [![NPM](https://img.shields.io/npm/v/digitinputs-react.svg)](https://www.npmjs.com/package/digitinputs-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+A react component for digit inputs. It might be very useful to get SMS codes from user on two factor authentications and in many other scenarios when you need get an numerical input from user digit by digit.
+
+Visit [homepage](https://yyalim.github.io/digitinputs-react/) to see how it is working.
 
 ## Install
 
@@ -31,7 +32,7 @@ class Example extends Component {
   render() {
     return (
       <form>
-        <DigitInputs hidden={hidden} onDigitsChange={this.handleDigitsChange}>
+        <DigitInputs hidden onDigitsChange={this.handleDigitsChange}>
           <Digit />
           <Digit />
           <Digit />
