@@ -15,12 +15,29 @@ npm install --save digitinputs-react
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'digitinputs-react'
+import { DigitInputs, Digit } from 'digitinputs-react'
 import 'digitinputs-react/dist/index.css'
 
 class Example extends Component {
+  // ...
+
+  handeDigitsChange(value) {
+    // value.asNumber -> 123
+    // value.asString -> '123'
+    // value.asObject => { '0': '1', '1': '2', '2': '3'}
+  }
+
+  // ...
   render() {
-    return <MyComponent />
+    return (
+      <form>
+        <DigitInputs hidden={hidden} onDigitsChange={this.handleDigitsChange}>
+          <Digit />
+          <Digit />
+          <Digit />
+        </DigitInputs>
+      </form>
+    )
   }
 }
 ```
