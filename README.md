@@ -22,7 +22,7 @@ import 'digitinputs-react/dist/index.css'
 class Example extends Component {
   // ...
 
-  handeDigitsChange(value) {
+  handleDigitsChange(value) {
     // value.asNumber -> 123
     // value.asString -> '123'
     // value.asObject => { '0': '1', '1': '2', '2': '3'}
