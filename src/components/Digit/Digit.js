@@ -6,7 +6,7 @@ export function Digit({ index, value, onDigitChange, focused, hidden }) {
 
   useEffect(() => {
     focused && digitRef.current.focus()
-  })
+  }, [])
 
   const handleChange = (event) => {
     onDigitChange(index, event.target.value)

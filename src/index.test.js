@@ -1,7 +1,8 @@
-import { ExampleComponent } from '.'
+import { DigitInputs, Digit } from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(DigitInputs).toBeTruthy()
+    expect(Digit).toBeTruthy()
   })
 })

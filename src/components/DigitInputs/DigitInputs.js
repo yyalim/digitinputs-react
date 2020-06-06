@@ -5,15 +5,13 @@ export function DigitInputs({ onDigitsChange, hidden, children }) {
   const [focusedIndex, setFocusedIndex] = useState({})
 
   useEffect(() => {
-    if (onDigitsChange) {
-      const asString = Object.values(values).join('')
-      const asNumber = Number(asString)
-      onDigitsChange({
-        asNumber,
-        asString,
-        asObject: values
-      })
-    }
+    const asString = Object.values(values).join('')
+    const asNumber = Number(asString)
+    onDigitsChange({
+      asNumber,
+      asString,
+      asObject: values
+    })
   }, [values])
 
   const handleDigitChange = (index, value) => {
