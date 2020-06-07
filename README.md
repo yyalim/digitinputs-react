@@ -3,7 +3,7 @@
 
 A react component for digit inputs. It might be very useful to get SMS codes from user on two factor authentications and in many other scenarios when you need get an numerical input from user digit by digit.
 
-Visit [homepage](https://yyalim.github.io/digitinputs-react/) to see how it is working.
+Visit [homepage](https://yyalim.github.io/digitinputs-react/) to see examples.
 
 ## Install
 
@@ -11,7 +11,9 @@ Visit [homepage](https://yyalim.github.io/digitinputs-react/) to see how it is w
 npm install --save digitinputs-react
 ```
 
-## Usage
+## Usage 
+
+Pass a function with single paramater to ```onDigitsChange``` props to get values. Digits lenght depends on how many ```Digit``` component passed as child. You can switch between ```text``` & ```password``` inputs by using ```hidden``` switch prop.
 
 ```jsx
 import React, { Component } from 'react'
@@ -23,9 +25,9 @@ class Example extends Component {
   // ...
 
   handleDigitsChange(value) {
-    // value.asNumber -> 123
-    // value.asString -> '123'
-    // value.asObject => { '0': '1', '1': '2', '2': '3'}
+    value.asNumber // -> 123
+    value.asString // -> '123'
+    value.asObject //-> { '0': '1', '1': '2', '2': '3'}
   }
 
   // ...
@@ -40,6 +42,21 @@ class Example extends Component {
       </form>
     )
   }
+}
+```
+
+And you can pass custom ```className``` to override default styles on ```DigitInputs``` & ```Digit``` components
+
+```jsx
+
+import React from 'react'
+function Example() {
+  return (
+    <DigitInputs className="custom-digitinputs">
+      <Digit className="digit-one" />
+      ...
+    </DigitInputs>
+  )
 }
 ```
 

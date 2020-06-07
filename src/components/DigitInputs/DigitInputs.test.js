@@ -3,14 +3,14 @@ import { DigitInputs } from './DigitInputs'
 import { Digit } from '../Digit/Digit'
 import { mount } from 'enzyme'
 
+const onDigitsChangeMock = jest.fn()
+let wrapper, firstInput, secondInput, thirdInput
+
+const event = {
+  target: { value: '1' }
+}
+
 describe('DigitInputs test suite', () => {
-  const onDigitsChangeMock = jest.fn()
-  let wrapper, firstInput, secondInput, thirdInput
-
-  const event = {
-    target: { value: '1' }
-  }
-
   beforeEach(() => {
     wrapper = mount(
       <DigitInputs onDigitsChange={onDigitsChangeMock}>

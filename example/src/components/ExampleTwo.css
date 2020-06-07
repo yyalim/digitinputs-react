@@ -1,0 +1,59 @@
+:root {
+  --lite-green: rgba(46, 204, 113,1.0);
+  --lite-blue: rgba(52, 152, 219,1.0);
+  --lite-purple: rgba(155, 89, 182,1.0);
+  --lite-red: rgba(231, 76, 60,1.0);
+  --lite-orange: rgba(230, 126, 34,1.0);
+  --lite-yellow: rgba(241, 196, 15,1.0);
+}
+
+.custom-digitinputs input {
+    margin: 3px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: bolder;
+    animation: none;
+    border-style: none;
+    animation: wiggle 2.5s infinite;
+}
+
+.digit-one {
+  box-shadow: var(--lite-red);
+  background-color: var(--lite-red);
+}
+
+.digit-two {
+  box-shadow: var(--lite-orange);
+  background-color: var(--lite-orange);
+}
+
+.digit-three {
+  box-shadow: var(--lite-yellow);
+  background-color: var(--lite-yellow);
+
+}
+
+.digit-four {
+  box-shadow: var(--lite-green);
+  background-color: var(--lite-green);
+}
+
+.digit-five {
+  box-shadow: var(--lite-blue);
+  background-color: var(--lite-blue);
+}
+
+.digit-six {
+  box-shadow: var(--lite-purple);
+  background-color: var(--lite-purple);
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}

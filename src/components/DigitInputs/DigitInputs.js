@@ -1,6 +1,8 @@
 import React, { useState, useEffect, Children, cloneElement } from 'react'
+import PropTypes from 'prop-types'
+import { Digit } from '../Digit/Digit'
 
-export function DigitInputs({ onDigitsChange, hidden, children }) {
+export function DigitInputs({ className, onDigitsChange, hidden, children }) {
   const [values, setValues] = useState({})
   const [focusedIndex, setFocusedIndex] = useState({})
 
@@ -33,5 +35,16 @@ export function DigitInputs({ onDigitsChange, hidden, children }) {
     })
   )
 
-  return <div className='digit-inputs'>{digits}</div>
+  return <div className={className}>{digits}</div>
+}
+
+DigitInputs.propTypes = {
+  onDigitsChange: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  hidden: PropTypes.bool,
+  children: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.oneOf([Digit])
+    })
+  )
 }
