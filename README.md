@@ -48,8 +48,6 @@ class Example extends Component {
 And you can pass custom ```className``` to override default styles on ```DigitInputs``` & ```Digit``` components
 
 ```jsx
-
-import React from 'react'
 function Example() {
   return (
     <DigitInputs className="custom-digitinputs">
