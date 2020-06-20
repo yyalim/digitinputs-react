@@ -30,6 +30,9 @@ describe('Digit test suite', () => {
   it('should not accept non-numeric values', () => {
     // invokes preventDefault method if non-numeric value entered
     const event = {
+      target: {
+        value: 'a'
+      },
       preventDefault: jest.fn(),
       key: 'a'
     }
