@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fa5136db3f3b8f3e1340544c4e551d3",
+    "revision": "f0c6d161f4222c9f1e162a57c85fc42f",
     "url": "/digitinputs-react/index.html"
   },
   {
-    "revision": "0ce7f2637dd64c7458b5",
+    "revision": "ffc8d59124fc19342913",
     "url": "/digitinputs-react/static/css/main.7485ea05.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/digitinputs-react/static/js/2.88a27944.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0ce7f2637dd64c7458b5",
-    "url": "/digitinputs-react/static/js/main.098dd030.chunk.js"
+    "revision": "ffc8d59124fc19342913",
+    "url": "/digitinputs-react/static/js/main.a68016a9.chunk.js"
   },
   {
     "revision": "ecc56cd524a1b2b766ec",

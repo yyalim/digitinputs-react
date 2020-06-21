@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/digitinputs-react/static/css/main.7485ea05.chunk.css",
-    "main.js": "/digitinputs-react/static/js/main.098dd030.chunk.js",
-    "main.js.map": "/digitinputs-react/static/js/main.098dd030.chunk.js.map",
+    "main.js": "/digitinputs-react/static/js/main.a68016a9.chunk.js",
+    "main.js.map": "/digitinputs-react/static/js/main.a68016a9.chunk.js.map",
     "runtime-main.js": "/digitinputs-react/static/js/runtime-main.86b4a255.js",
     "runtime-main.js.map": "/digitinputs-react/static/js/runtime-main.86b4a255.js.map",
     "static/js/2.88a27944.chunk.js": "/digitinputs-react/static/js/2.88a27944.chunk.js",
     "static/js/2.88a27944.chunk.js.map": "/digitinputs-react/static/js/2.88a27944.chunk.js.map",
     "index.html": "/digitinputs-react/index.html",
-    "precache-manifest.a21c44388877d8b2b6d0893f8ebfa43c.js": "/digitinputs-react/precache-manifest.a21c44388877d8b2b6d0893f8ebfa43c.js",
+    "precache-manifest.8e68e64c81930ccfd0f3c80843e19b46.js": "/digitinputs-react/precache-manifest.8e68e64c81930ccfd0f3c80843e19b46.js",
     "service-worker.js": "/digitinputs-react/service-worker.js",
     "static/css/main.7485ea05.chunk.css.map": "/digitinputs-react/static/css/main.7485ea05.chunk.css.map",
     "static/js/2.88a27944.chunk.js.LICENSE.txt": "/digitinputs-react/static/js/2.88a27944.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.86b4a255.js",
     "static/js/2.88a27944.chunk.js",
     "static/css/main.7485ea05.chunk.css",
-    "static/js/main.098dd030.chunk.js"
+    "static/js/main.a68016a9.chunk.js"
   ]
 }
