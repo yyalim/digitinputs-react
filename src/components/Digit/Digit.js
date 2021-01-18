@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
+import useFocus from '../../hooks/useFocus'
 import styles from './Digit.module.css'
 import PropTypes from 'prop-types'
 
@@ -10,11 +11,7 @@ export function Digit({
   focused,
   hidden
 }) {
-  const digitRef = useRef(null)
-
-  useEffect(() => {
-    focused && digitRef.current.focus()
-  }, [focused])
+  const digitRef = useFocus(focused)
 
   const handleChange = (event) => {
     onDigitChange(index, event.target.value)
