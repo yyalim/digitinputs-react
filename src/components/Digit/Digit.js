@@ -19,7 +19,6 @@ export function Digit({
 
   const validateDigit = (event) => {
     if (!/[0-9]/.test(event.key)) {
-      event.target.value = ''
       event.preventDefault()
     }
   }
