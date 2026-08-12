@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { Digit } from '../Digit/Digit'
 import { REGEXS, KEY_CODES } from '../../utils/constants'
 
-export function DigitInputs({ className, onDigitsChange, hidden, children }) {
+export function DigitInputs({ className, onDigitsChange, hidden, children, focusIndex = null }) {
   const [values, setValues] = useState({})
-  const [focusedIndex, setFocusedIndex] = useState(null)
+  const [focusedIndex, setFocusedIndex] = useState(focusIndex)
 
   useEffect(() => {
     const asString = Object.values(values).join('')
@@ -50,6 +50,7 @@ DigitInputs.propTypes = {
   onDigitsChange: PropTypes.func.isRequired,
   className: PropTypes.string,
   hidden: PropTypes.bool,
+  focusIndex: PropTypes.number,
   children: PropTypes.arrayOf(
     PropTypes.shape({
       type: PropTypes.oneOf([Digit])

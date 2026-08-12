@@ -45,6 +45,30 @@ class Example extends Component {
 }
 ```
 
+You can also set the initial focus to a specific digit by passing the ```focusIndex``` prop.
+
+```jsx
+import React, { Component } from 'react'
+
+import { DigitInputs, Digit } from 'digitinputs-react'
+import 'digitinputs-react/dist/index.css'
+
+class Example extends Component {
+  // ...
+  render() {
+    return (
+      <form>
+        <DigitInputs focusIndex={0} onDigitsChange={this.handleDigitsChange}>
+          <Digit />
+          <Digit />
+          <Digit />
+        </DigitInputs>
+      </form>
+    )
+  }
+}
+```
+
 And you can pass custom ```className``` to override default styles on ```DigitInputs``` & ```Digit``` components
 
 ```jsx
